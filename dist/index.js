@@ -50,6 +50,7 @@ var Barcode = function (ref) {
   var textColor = ref.textColor; if ( textColor === void 0 ) textColor = '#000000';
   var lineColor = ref.lineColor; if ( lineColor === void 0 ) lineColor = '#000000';
   var background = ref.background; if ( background === void 0 ) background = '#ffffff';
+  var flat = ref.flat;
   var onError = ref.onError;
 
   var ref$1 = React.useState([]);
@@ -67,7 +68,8 @@ var Barcode = function (ref) {
     textColor: textColor,
     lineColor: lineColor,
     background: background,
-    onError: onError
+    onError: onError,
+    flat: flat
   };
   React.useEffect(function () {
     update();
