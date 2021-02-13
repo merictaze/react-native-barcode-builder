@@ -3,6 +3,10 @@
 
 React Native component to generate barcodes. Uses [JsBarcode](https://github.com/lindell/JsBarcode) for encoding of data.
 
+## Updates in this Fork
+* Add flat prop from https://github.com/lindell/JsBarcode to make EAN work
+* Update react-native-svg version to fix "tried to register two views with the same rnsvgrect" error
+
 ## Getting started
 
 #### Step 1
