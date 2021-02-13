@@ -14,6 +14,7 @@ type props = {
   textColor: string;
   lineColor: string;
   background: string;
+  flat: boolean;
   onError?: (error: Error) => any;
 };
 
@@ -26,6 +27,7 @@ const Barcode = ({
   textColor = '#000000',
   lineColor = '#000000',
   background = '#ffffff',
+  flat,
   onError,
 }: props) => {
   const [bars, setBars] = useState([]);
@@ -41,6 +43,7 @@ const Barcode = ({
     lineColor,
     background,
     onError,
+    flat,
   };
 
   useEffect(() => {
